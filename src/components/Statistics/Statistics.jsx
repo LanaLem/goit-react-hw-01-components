@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Box } from '../../constants/Box';
 import { SectionStatistics, Title, ItemStatics } from './Statistics.styled'
-import { getRandomHexColor } from 'utils/randomColor'
+
 
 export const Statistics = ({ title, stats }) => {
     
@@ -11,7 +11,7 @@ export const Statistics = ({ title, stats }) => {
             <Box as='ul' display='flex'>
                 {
                     stats.map(({ id, label, percentage }) => (
-                        <ItemStatics key={id} style={{backgroundColor:getRandomHexColor()}}>
+                        <ItemStatics key={id}>
                         <span>{label}</span>
                         <span>{percentage}%</span>
                         </ItemStatics>))

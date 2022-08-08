@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getRandomHexColor } from 'utils/randomColor'
 
 export const SectionStatistics = styled.section`
     width: 286px;
@@ -24,4 +25,5 @@ export const ItemStatics = styled.li`
     padding-bottom: ${props => props.theme.space[4]}px;
 
     color: ${props => props.theme.colors.white};
+    background-color: ${getRandomHexColor};
 `
